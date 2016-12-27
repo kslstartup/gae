@@ -1,0 +1,11 @@
+apply plugin: 'jetty'
+apply plugin: 'war'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile group: 'org.glassfish.jersey.core', name: 'jersey-server', version: '2.25'
+    compile group: 'org.glassfish.jersey.containers', name: 'jersey-container-servlet', version: '2.25'
+}
